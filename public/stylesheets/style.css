@@ -6,3 +6,26 @@ body {
 a {
   color: #00B7FF;
 }
+
+.collapsible {
+    background-color: #eeeeee;
+    color: #444444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: 1px darkgrey solid;
+    font-size: 1.5em;
+    margin-top: 0.5em;
+}
+
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.technique-table {
+    padding: 0 3em;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
