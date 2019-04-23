@@ -2,7 +2,6 @@ extends templates/layout
 
 block content
   h3 General
-  br
   button(class='collapsible') Encoding
   div(class='technique-table')
     table
@@ -81,7 +80,6 @@ block content
         th Examples
       tr
         td the process of identifying and removing errors from computer hardware or software (Google)
-        td #[a(href="http://www.digitalhumanities.org/dhq/vol/3/2/000037/000037.html") Basic Guide to Text Encoding]
         td #[a(href="http://journalofdigitalhumanities.org/1-1/getting-started-in-digital-humanities-by-lisa-spiro/") Getting Started in Digital Humanities]
 
 
@@ -117,10 +115,34 @@ block content
         td #[a(href="https://wiki.dbpedia.org/") DBPedia]
 
   h3 Would be enriched if annotated
-  ul
-    li Georeferencing
-    li Linked Open Data
-    li Named Entity Recognition
+  button(class='collapsible') Georeferencing
+  div(class='technique-table')
+    table
+      tr
+        th Definition
+        th Examples
+      tr
+        td the process of assigning real-world coordinates to each pixel of the raster. Many times these coordinates are obtained by doing field surveys - collecting coordinates with a GPS device for few easily identifiable features in the image or map. (QGIS Tutorials and Tips)
+        td #[a(href="http://www.hipkiss.org/data/maps.html") Hipkiss Scanned Old Maps]
+  button(class='collapsible') Linked Open Data
+  div(class='technique-table')
+    table
+      tr
+        th Definition
+        th Examples
+      tr
+        td Linked Data lies at the heart of what Semantic Web is all about: large scale integration of, and reasoning on, data on the Web.  (W3.org)
+        td #[a(href="https://wiki.dbpedia.org/") DBPedia]
+  button(class='collapsible') Named Entity Recognition
+  div(class='technique-table')
+    table
+      tr
+        th Definition
+        th Examples
+      tr
+        td also known as entity extraction classifies named entities that are present in a text into pre-defined categories like “individuals”, “companies”, “places”, “organization”, “cities”, “dates”, “product terminologies” etc. It adds a wealth of semantic knowledge to your content and helps you to promptly understand the subject of any given text. (Medium)
+        td #[a(href="https://www.paralleldots.com/named-entity-recognition/") Paralell Dots]
+
   h3 Analysis (Structural, Stylistic, and/or Content)
   ul
     li Information Retrieval
