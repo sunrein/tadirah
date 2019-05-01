@@ -1,11 +1,80 @@
+.MainContainer {
+  /*text-align: center;
+  background-color: transparent;
+  position: relative;
+  text-align: center;*/
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /*background-image: url("/images/andrew-neel-308138-unsplash.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover*/
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(/images/andrew-neel-308138-unsplash.jpg);
+  background-size: 100%;
+  background-color: rgb(250,228, 216);
+}
+
+.home-content {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.title-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font: 30px "Lucida Grande";
+  color: white;
+}
+
+.site-nav {
+  position: absolute;
+  top: 30px;
+  right: 16px;
+}
+
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 a {
   color: #00B7FF;
 }
+
+.navigation {
+  color: white;
+  margin: 0 .618em;
+  padding: 0 .618em;
+  text-decoration: none;
+}
+
+.navigation:hover {
+  color: #919191;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
 
 .collapsible {
     background-color: #eeeeee;
