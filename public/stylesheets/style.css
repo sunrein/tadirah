@@ -56,6 +56,13 @@
   text-align: left;
   background-color: rgba(225,225,225,0.5);
   padding: 2em;
+  margin: 0;
+}
+
+.activity-head {
+  background-color: lightgrey;
+  text-align: center;
+  margin: 0;
 }
 
 .main-content {
@@ -91,19 +98,34 @@ h2 {
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
+  padding: .5em;
   padding-left: 2em;
   font-size: 16pt;
+  background: lightgrey; color: black; overflow: hidden;
 }
 
+ul {
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
+  padding: .5em;
+  margin: 0;
+}
 
 .home {
   text-align: center;
 }
 
-th {
+th, td {
   font-size: 15pt;
   padding: 1em;
+}
+
+td {
+  width: 50%;
 }
 
 .home-navigation {
@@ -151,6 +173,18 @@ img {
     padding-left: 2.5em;
 }
 
+.collapsible-tech {
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14pt;
+    padding: .5em;
+    padding-left: 2.5em;
+}
+
 .active, .collapsible:hover {
   background-color: rgba(200,225,250,0.5);
 }
@@ -160,13 +194,13 @@ img {
 }
 
 .technique-table {
-    padding: 2em;
     display: none;
     overflow: hidden;
     background-color: rgba(255,255,255,0.5);
     outline: 1px lightgrey solid;
     text-align: center;
-
+    table-layout: fixed;
+    width: 100%;
 }
 
 .activity-table {
@@ -176,5 +210,4 @@ img {
     overflow: hidden;
     background-color: rgba(250,250,250,0.5);
     outline: 1px lightgrey solid;
-
 }
