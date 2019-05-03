@@ -115,10 +115,6 @@ li {
   margin: 0;
 }
 
-.home {
-  text-align: center;
-}
-
 th, td {
   font-size: 15pt;
   padding: 1em;
@@ -126,6 +122,10 @@ th, td {
 
 td {
   width: 50%;
+}
+
+.home {
+  text-align: center;
 }
 
 .home-navigation {
@@ -153,6 +153,21 @@ td {
   text-decoration: none;
   font-size: 14pt;
   color: black;
+}
+
+.footer {
+  background-color: #363738;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.footer a {
+  color: white;
+  padding: 1em;
+}
+
+.footer a:hover {
+  color: #adadad;
 }
 
 img {
@@ -210,4 +225,9 @@ img {
     overflow: hidden;
     background-color: rgba(250,250,250,0.5);
     outline: 1px lightgrey solid;
+}
+
+.footer-table {
+  width: 100%;
+  padding: 0;
 }
