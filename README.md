@@ -13,10 +13,10 @@ In your terminal:
 2. [Install Express.js](https://expressjs.com/en/starter/installing.html)
 3. [Install Pug.js](https://pugjs.org/api/getting-started.html)
 
-### Fork the repository.
+### Clone the repository.
 
 ### Start your server:
-`DEBUG=tadirah:* npm start`
+Type the command `DEBUG=tadirah:* npm start`
 
 Go to `http://localhost:3000/`
 
