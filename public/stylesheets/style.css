@@ -1,42 +1,233 @@
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: linear-gradient(
+                     rgba(20,20,20, .5),
+                     rgba(20,20,20, .5)),
+                     url(/images/chris-lawton-172561-unsplash.jpg);
+  background-size: 100%;
+  background-color: white;
+
+}
+
+.home-content {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+  padding: 5em;
+}
+
+.title-text {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  font: 30pt "Roboto", sans-serif;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+}
+
+.details {
+  text-align: center;
+}
+
+.HomeNavContainer {
+  position: absolute;
+  top: 30px;
+  right: 16px;
+}
+
+.activity-category {
+  font-size: 13pt;
+  text-align: left;
+  background-color: rgba(225,225,225,0.5);
+  padding: 2em;
+  margin: 0;
+}
+
+.activity-head {
+  background-color: lightgrey;
+  text-align: center;
+  margin: 0;
+}
+
+.main-content {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Roboto", Helvetica, Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+
 }
 
 a {
-  color: #00B7FF;
+  color: #3d49e5;
+  text-decoration: none;
 }
 
+a:hover {
+  color: #989eea;
+}
+
+h1 {
+  text-align: left;
+  font: 30pt "Roboto", "Helvetica", "Arial", sans-serif;
+  padding: .5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 20pt;
+}
+
+h3 {
+  text-align: left;
+  padding: .5em;
+  padding-left: 2em;
+  font-size: 16pt;
+  background: lightgrey; color: black; overflow: hidden;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  list-style-type: none;
+  padding: .5em;
+  margin: 0;
+}
+
+th, td {
+  font-size: 15pt;
+  padding: 1em;
+}
+
+td {
+  width: 50%;
+}
+
+.home {
+  text-align: center;
+}
+
+.home-navigation {
+  color: white;
+  margin: .7em;
+  padding: .7em;
+  text-decoration: none;
+  font-size: 18pt;
+  text-shadow: 1.5px 1.5px 2px black;
+  font-weight: bold;
+}
+
+.home-navigation:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.site-nav-container {
+  float: right;
+}
+
+.navigation {
+  margin: .7em;
+  padding: .7em;
+  text-decoration: none;
+  font-size: 14pt;
+  color: black;
+}
+
+.footer {
+  background-color: #363738;
+  text-align: center;
+  font-size: 12pt;
+}
+
+.footer a {
+  color: white;
+  padding: 1em;
+}
+
+.footer a:hover {
+  color: #adadad;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
 .collapsible {
-    background-color: #eeeeee;
-    color: #444444;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
     cursor: pointer;
     width: 100%;
     border: none;
     text-align: left;
-    outline: 1px darkgrey solid;
-    font-size: 1.5em;
-    margin-top: 0.5em;
+    font-size: 14pt;
+    padding: .5em;
+    padding-left: 2.5em;
+}
+
+.collapsible-tech {
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 14pt;
+    padding: .5em;
+    padding-left: 2.5em;
 }
 
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: rgba(200,225,250,0.5);
 }
 
 .active, .collapsible:focus {
-  background-color: #ccc;
+  background-color: rgba(150,200,225,0.5);
 }
 
 .technique-table {
-    padding: 0 3em;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: rgba(255,255,255,0.5);
+    outline: 1px lightgrey solid;
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
 }
 
 .activity-table {
-    padding: 0 3em;
+    font-size: 14pt;
+    padding: 2em;
     display: none;
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: rgba(250,250,250,0.5);
+    outline: 1px lightgrey solid;
+}
+
+.footer-table {
+  width: 100%;
+  padding: 0;
 }

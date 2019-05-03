@@ -1,9 +1,14 @@
 doctype html
 html
   head
-    h1 TaDiRAH
+    style @import url('https://fonts.googleapis.com/css?family=Roboto');
+    include navigation.pug
+    h1
+      a(href='/') TaDiRAH
     include header.pug
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
     block content
+
+  include footer.pug
