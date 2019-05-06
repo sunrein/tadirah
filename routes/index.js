@@ -22,4 +22,8 @@ router.get('/resources', function(req, res, next){
   res.render('resources', { title: 'Resources' } );
  });
 
+router.get('/about', function(req, res, next){
+  res.render('about', { title: 'About' } );
+ });
+
 module.exports = router;
